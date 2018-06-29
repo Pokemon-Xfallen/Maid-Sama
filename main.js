@@ -18,5 +18,5 @@ bot.on("message", msg => {
 
 });
 
-bot.login(config.TOKEN)
+bot.login(process.env.BOT_TOKEN)
 //bot.login(config.TOKEN2)
