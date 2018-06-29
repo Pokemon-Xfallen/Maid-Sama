@@ -12,7 +12,7 @@ bot.on("ready", () => {
 
 bot.on("message", msg => {
 
-    if(msg.content === "ping"){
+    if(msg.content === `${PREFIX}ping`){
         msg.reply("Pong")
     }
 
