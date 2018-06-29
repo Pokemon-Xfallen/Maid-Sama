@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Pokemon-Xfallen/Maid-Sama#readme",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.3.2",
+    "fs": "0.0.1-security"
   }
 }
