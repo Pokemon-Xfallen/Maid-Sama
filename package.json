@@ -1,0 +1,28 @@
+{
+  "name": "maid-sama",
+  "version": "1.0.0",
+  "description": "Awesome bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pokemon-Xfallen/Maid-Sama.git"
+  },
+  "keywords": [
+    "main",
+    "anime",
+    "bot",
+    "discord"
+  ],
+  "author": "PokemonLeader & Xfallen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pokemon-Xfallen/Maid-Sama/issues"
+  },
+  "homepage": "https://github.com/Pokemon-Xfallen/Maid-Sama#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
