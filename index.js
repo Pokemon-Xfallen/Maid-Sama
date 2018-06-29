@@ -11,6 +11,8 @@ bot.on("ready", () => {
 });
 
 bot.on("message", msg => {
+    
+    let PREFIX = config.PREFIX;
 
     if(msg.content === `${PREFIX}ping`){
         msg.reply("Pong")
