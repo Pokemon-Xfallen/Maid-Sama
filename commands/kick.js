@@ -3,7 +3,7 @@ const errors = require("../utils/errors.js");
 
 module.exports.run = async (bot, message, args) => {
 
-    if(!message.member.hasPermission("KICK_MEMBERS")) return errors.noPerms(message, "KICK_MEMBERS");
+    if(!message.member.hasPermission("ADMININTRATOR")) return errors.noPerms(message, "KICK_MEMBERS");
     if(args[0] == "help"){
       message.reply("Usage: !kick <user> <reason>");
       return;
