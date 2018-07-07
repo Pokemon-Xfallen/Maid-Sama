@@ -7,9 +7,7 @@ const config = {
 const bot = new Discord.Client;
 bot.commands = new Discord.Collection();
 
-bot.on("ready", () => {
-    console.log(`${bot.user.username} Is Onlien!!`);
-});
+bot.on("ready", () => require("./events/ready.js")(bot));
 
 fs.readdir("./commands/", (err, files) => {
 
