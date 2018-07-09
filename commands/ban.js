@@ -3,7 +3,7 @@ const errors = require("../utils/errors.js");
 
 module.exports.run = async (bot, message, args) => {
     message.delete();
-    if(!message.member.hasPermission("BAN_MEMBERS")) return errors.noPerms(message, "BAN_MEMBERS");
+    if(!message.member.hasPermission("ADMININTRATOR")) return errors.noPerms(message, "ADMININTRATOR");
     if(args[0] == "help"){
       message.reply("Usage: !ban <user> <reason>");
       return;
@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
     if(bUser.id === bot.user.id) return errors.botuser(message); 
     let bReason = args.join(" ").slice(22);
     if(!bReason) return errors.noReason(message.channel);
-    if(bUser.hasPermission("MANAGE_MESSAGES")) return errors.equalPerms(message, bUser, "MANAGE_MESSAGES");
+    if(bUser.hasPermission("ADMININTRATOR")) return errors.equalPerms(message, bUser, "ADMININTRATOR");
 
     let banEmbed = new Discord.RichEmbed()
     .setDescription("~Ban~")
