@@ -4,7 +4,7 @@ const errors = require("../utils/errors.js");
 module.exports.run = async (bot, message, args) => {
 
   //!addrole @andrew Dog Person
-  if (!message.member.hasPermission("MANAGE_ROLES")) return errors.noPerms(message, "MANAGE_ROLES");
+  if (!message.member.hasPermission("ADMININTRATOR")) return errors.noPerms(message, "ADMININTRATOR");
   if (args[0] == "help") {
     message.reply("Usage: !addrole <user> <role>");
     return;
