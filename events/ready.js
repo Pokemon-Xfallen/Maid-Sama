@@ -1,6 +1,6 @@
 module.exports = (bot) => {
 
   console.log(`${bot.user.tag} is Online!!`);
-  bot.user.setActivity("Minecraft")
+  bot.user.setActivity("xFallen hes so cute")
 
 }
